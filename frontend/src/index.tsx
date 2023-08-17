@@ -2,6 +2,8 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import Navbar from './Components/ResponsiveAppBar';
+import Login from './Components/Login';
+import Budget from './Components/Budgets';
 import Signup from './Components/SignUp'
 import reportWebVitals from './reportWebVitals';
 
@@ -10,7 +12,8 @@ const root = ReactDOM.createRoot(
 );
 root.render(
   <React.StrictMode>
-    <Signup />
+    <Navbar/>
+    <Budget/>
   </React.StrictMode>
 );
 

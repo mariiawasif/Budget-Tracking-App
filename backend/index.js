@@ -13,6 +13,8 @@ mongoose.connect(process.env.MONDO_URI, {useNewUrlParser: true, useUnifiedTopolo
 .catch(()=> console.log(err));
 
 app.use('/user', userRoutes);
+app.use('/login', userRoutes);
+app.use('/addbudget', userRoutes);
 
 app.listen(port, () => {
     console.log(`Server running on http://localhost:${port}`);
